@@ -3,17 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 export const saveInfoSlice = createSlice({
     name: "saveInfo",
     initialState: {
-        saveInfo: {
-            author: "Anonymous",
-            date: new Date(),
-        },
+        author: "Anonymous",
+        date: new Date(),
     },
     reducers: {
         setAuthor: (state, action) => {
-            state.saveInfo.author = action.payload;
+            state.author = action.payload;
         },
         setDate: (state, action) => {
-            state.saveInfo.date = action.payload;
+            state.date = action.payload;
         },
     },
 });

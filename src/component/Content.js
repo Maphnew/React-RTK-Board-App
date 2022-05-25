@@ -4,7 +4,8 @@ import { createArticle } from "../redux/slices/articleSlice";
 
 const Content = (props) => {
     const { article, setArticle, setOpenModal, modal } = props;
-    const { author, date } = useSelector((state) => state.saveInfo.saveInfo);
+    const author = useSelector((state) => state.saveInfo.author);
+    const date = useSelector((state) => state.saveInfo.date);
     const dispatch = useDispatch();
     useEffect(() => {
         if (!modal) return;
