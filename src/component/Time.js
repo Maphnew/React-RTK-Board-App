@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setDate } from "../redux/slices/saveInfoSlice";
 
 const Time = () => {
-    console.log("Time component rendered");
     const date = useSelector((state) => state.saveInfo.date);
     const dispatch = useDispatch();
 

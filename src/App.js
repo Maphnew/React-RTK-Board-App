@@ -9,7 +9,7 @@ function App() {
     const [article, setArticle] = useState({ number: "", title: "", author: "", date: "", content: "" });
     return (
         <Provider store={store}>
-            <h2>Board App 📋</h2>
+            <h2>Board App 📋 with RTK</h2>
             <div className="App">
                 <ArticleList article={article} setArticle={setArticle} />
                 <Content article={article} setArticle={setArticle} />
